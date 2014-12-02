@@ -8,7 +8,12 @@ var accountPage = (function() {
 	//check empty/same account entered
 		return true;
 	}
-
+	function getAccountPwdRule() {
+		var length = $("#pwdLength");
+		var specialCharBool = $("#pwdSpecialChar");
+		var upperCaseBool = $("#pwdUpper");
+	}
+	
 	function submitFunction (e) {
 		if ( ((e.keyCode === 13) || (e.keyCode == undefined)) 
 				&& ($("#entry:focus")) ) {
